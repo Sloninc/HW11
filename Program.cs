@@ -21,7 +21,6 @@
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return;
             }
             Console.ReadLine();
         }
