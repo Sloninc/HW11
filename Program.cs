@@ -16,7 +16,7 @@
                 s.Pop();
                 s.Pop();
                 Console.WriteLine($"size = {s.Size}, Top = {(s.Top == null ? "null" : s.Top)}");
-                s.Pop();
+                //s.Pop();
             }
             catch(Exception ex)
             {
