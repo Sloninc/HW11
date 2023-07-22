@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW11
 {
-    internal class Stack
+    public class Stack
     {
         private List<string> _list = new();
         public Stack(params string[] str)
@@ -41,6 +41,23 @@ namespace HW11
                     return _list[_list.Count - 1];
                 else return null;
             }    
+        }
+        public void Show()
+        {
+            Console.Write("Элементы стека: ");
+            foreach (var item in _list)
+                Console.Write(item + "  ");
+        }
+        public static Stack Concat(params Stack[] stacks)
+        {
+            var stk = new Stack();
+            foreach (var item in stacks)
+            {
+                var size=item.Size;
+                for (int i = 0; i < size; i++)
+                    stk.Add(item.Pop());
+            }
+            return stk;
         }
     }
 }
