@@ -6,6 +6,7 @@
         {
             try
             {
+
                 //var s = new Stack("a", "b", "c");
                 //Console.WriteLine($"size = {s.Size}, Top = '{s.Top}'");
                 //var deleted = s.Pop();

@@ -10,12 +10,11 @@ namespace HW11
     {
         public static void Merge(this Stack stack1, Stack stack2)
         {
-            var size=stack2.Size;
-            for(int i = 0; i < size; i++)
+            var size = stack2.Size;
+            for (int i = 0; i < size; i++)
             {
                 stack1.Add(stack2.Pop());
             }
-            //return stack1;  
         }
     }
 }
